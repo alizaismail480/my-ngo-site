@@ -1,0 +1,111 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONATION-FORM</title>
+<style>
+body {
+    font-family: 'poppins', sans-serif;
+    background: #c0a1c0; 
+}
+
+#container{
+     display: flex;
+      flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+h3 {
+    
+    color: #18011b;
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: bold;
+
+}
+
+.donate-form {
+text-align: center;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.donate-form:hover {
+    transform: translateY(-5px); 
+}
+
+.donate-form label {
+    display: block;
+    margin: 12px 0 5px;
+    color: #2a0130; 
+    font-weight: 500;
+}
+
+.donate-form input[type="text"],
+.donate-form input[type="tel"],
+.donate-form input[type="email"],
+.donate-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #936197;
+    margin-bottom: 12px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.donate-form input[type="text"]:focus,
+.donate-form input[type="tel"]:focus,
+.donate-form input[type="email"]:focus,
+.donate-form textarea:focus {
+    border-color: #914991;
+    box-shadow: 0 0 8px rgba(110, 9, 114, 0.2);
+}
+
+.donate-form input[type="button"] {
+    background: #6b3d6b;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.donate-form input[type="button"]:hover {
+    background:black;
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+    <div id="container">
+    <h3>✨Donatation Form</h3>
+    <form action="https://formspree.io/f/xkgyrenk" method="post">
+        
+        <label for="name"> Name:</label><br>
+        <input type="text" name="name" placeholder="Enter your full name" required><br>
+         <label for="Phone"> Phone Number:</label><br>
+         <input type="tel" name="phone" placeholder="03XX-XXXXXXX" required><br>
+         <label for="email">Email:</label><br>
+        <input type="email" name="email" placeholder="Enter email" required><br>
+         <label for="location">Location:</label><br>
+          <textarea name="location" placeholder="Share your location"></textarea><br>
+          <label for="Quantity">Quantity/Type(if available):</label><br>
+         <textarea name="Quantity"></textarea><br>
+          <input type="submit" value="Donate">
+    </form>
+    </div>
+</body>
+</html>

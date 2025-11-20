@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN-US</title>
+</head>
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background:  #b797be;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.join-us {
+    max-width: 700px;
+    width: 90%;
+    background: linear-gradient(145deg, #fceffc, #f8defc); 
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.join-us h2 {
+    color: #4c0c52; 
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.join-us p {
+    color: black; 
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.join-us h3 {
+    color: #781581;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.join-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #a57aa1;
+    font-weight: 500;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 15px;
+    border: 1px solid #4e014a;
+    margin-bottom: 12px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.join-form input[type="text"]:focus,
+.join-form input[type="email"]:focus,
+.join-form input[type="tel"]:focus,
+.join-form textarea:focus {
+    border-color: #50015a;
+    box-shadow: 0 0 8px rgba(169, 108, 187, 0.2);
+}
+
+.join-form input[type="button"] {
+    background: #fcccfd;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.join-form input[type="button"]:hover {
+    background: #f776ec;
+    transform: scale(1.05);
+}
+
+</style>
+<body>
+    <section class="join-us">
+  <h2>🤝 Join Us — Become a Volunteer</h2>
+
+  <p>
+    Be a part of <strong>Sirat-ul-Falah</strong> — where helping others becomes an act of faith.  
+    Together, we can bring positive change, spread kindness, and build a compassionate community guided by Deen.  
+    Whether you want to teach, organize, donate time, or share your skills — every effort counts!
+  </p>
+
+  <p>
+    Join our volunteer network and contribute to causes that touch hearts — from food drives and educational sessions to community welfare and youth empowerment.  
+    Let’s hold hands together for humanity 🌸
+  </p>
+
+  <h3>✨ Volunteer Registration Form</h3>
+
+  <form action="https://formspree.io/f/xblqlwob" method="post">
+
+    <label for="name">Your Name:</label><br>
+    <input type="text" name="name" placeholder="Enter full name" required><br>
+
+    <label for="email"> Your Email:</label><br>
+    <input type="email" name="email" placeholder="Enter email" required><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" name="phone" placeholder="03XX-XXXXXXX" required><br>
+
+    <label for="skills">Skills / Expertise:</label><br>
+    <input type="text" name="skills" placeholder="e.g. Management, Design"><br>
+
+    <label for="interest"> Projects of Interest:</label><br>
+    <textarea name="interest" placeholder="Write project name"></textarea><br>
+
+    <label for="ideas"> Your ideas (Optional):</label><br>
+    <textarea name="ideas" placeholder="Share your suggestions"></textarea><br>
+
+    <input type="submit" value="Submit Form">
+
+  </form>
+</section>
+</body>
+</html>
